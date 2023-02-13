@@ -1,11 +1,11 @@
 var express = require("express");
 var logger = require("morgan");
 
-var indexRouter = require("./routes/index");
-
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
+
+var indexRouter = require("./routes/index");
 
 var app = express();
 
