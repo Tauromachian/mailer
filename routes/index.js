@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-router.post("/contact-me", function (req, res, next) {
+router.post("/contact-me", function (req, res) {
   const { from, to, subject, text } = req.body;
 
   const mailOptions = {
