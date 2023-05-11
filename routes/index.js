@@ -18,7 +18,7 @@ router.post("/contact-me", function (req, res) {
     from,
     to,
     subject,
-    text,
+    text: `${text}\nSent by ${from}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
