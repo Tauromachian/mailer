@@ -25,7 +25,7 @@ router.post("/contact-me", function (req, res) {
     if (error) {
       res.json(error);
     }
-    res.json(info);
+    res.json({ message: "Email sent successfully" });
   });
 });
 
